@@ -13,7 +13,7 @@
     "license": "OPL-1",
     'images': ['images/telegram.png'],
     'category': 'KTT/KTT',
-    'version': '17.0.0.1',
+    'version': '17.1.0.1',
 
     # DEPENDS MODULES
     'depends': ['base', 'project'],
