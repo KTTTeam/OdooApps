@@ -11,7 +11,7 @@
     'maintainer': 'Mai Văn Khai',
     'website': "https://kkt.io.vn",
     "license": "OPL-1",
-    'images': ['images/telegram.png'],
+    'images': ['images/demo.gif'],
     'category': 'KTT/KTT',
     'version': '17.1.0.1',
 
