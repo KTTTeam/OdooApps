@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "KTT Telegram",
+    'name': "Telegram Integration",
     'summary': """
         KTT telegram integration with project module.
     """,
