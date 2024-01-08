@@ -43,7 +43,7 @@ class ProjectTask(models.Model):
         project = self.project_id
         tele_token = project.telelegram_token
         tele_chat_id = project.chat_id
-        if(not tele_token and not tele_chat_id): return
+        if(not tele_token or not tele_chat_id): return
         reply_message_id = False
         task_url = self.prepare_url()
         user_name = self.env.user.name
