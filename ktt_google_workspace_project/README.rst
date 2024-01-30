@@ -1,0 +1,1 @@
+[17.1.0.1] [ADD] ktt_google_workspace_project: integration Telegram with Project module (Odoo)

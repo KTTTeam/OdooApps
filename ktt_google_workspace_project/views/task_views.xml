@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="ktt_google_workspace_project_task_view_form_inherit" model="ir.ui.view">
+            <field name="name">KTT Google Workspace Task View Form Inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2" />
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page name="google_workspace" string="Google Workspace">
+                        <group>
+                            <group name="info" string="Information">
+                                <field name="google_workspace_webhook"/>
+                                <field name="thread_message_id" />
+                                <field name="card_message_id"/>
+                            </group>
+                            <group />
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
