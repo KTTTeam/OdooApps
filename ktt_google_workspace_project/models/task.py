@@ -39,14 +39,17 @@ class Task(models.Model):
         readonly=True,
         default="".join(random.choice(string.ascii_letters) for char in range(16)),
     )
+    
     def create(self, vals_list):
+        _logger.info("Create called fetching ...", )
         task =  super(Task,self).create(vals_list)
         if task.google_workspace_webhook and task.project_id.is_created_task:
-            task._send_messages_to_google_workspace(info={'title':'Create new task','content': ''})
+            task._send_messages_to_google_workspace(info={'title':'Create new task','content': f'{task.name} created.'})
         return task
 
     def write(self, vals):
-        self._send_messages_to_google_workspace(info={'title':'Task updated','content': 'Newly updated task'})
+        _logger.info("Write called fetching ...", )
+        #self._send_messages_to_google_workspace(info={'title':'Task updated','content': 'Newly updated task'})
         return super(Task,self).write(vals)
     
     def unlink(self):
@@ -93,6 +96,7 @@ class Task(models.Model):
 
     def _get_card_message(self,info):
         """
+            Reference document for card design UI of google official follow by => https://developers.google.com/chat/design-components-card-dialog
             # ** Description **
             # - Prepare card message updated
             # - Purpose: use by send request
@@ -171,3 +175,4 @@ class Task(models.Model):
     def _format_uri(self,webhook):
         l = webhook.split("?")
         return f"{l[0]}?threadKey={self.thread_message_id}&{l[1]}&messageReplyOption=REPLY_MESSAGE_FALLBACK_TO_NEW_THREAD"
+

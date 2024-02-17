@@ -5,7 +5,6 @@ import io
 import logging
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
-import httplib2
 from json import dumps
 from datetime import datetime, timedelta
 # 2 : imports of odoo

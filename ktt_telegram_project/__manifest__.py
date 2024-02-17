@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Telegram Integration",
+    'name': "Telegram Project",
     'summary': "KTT telegram integration with project module.",
     'author': "KTT Team",
     'maintainer': 'Mai Văn Khai',
     'website': "https://ktt.io.vn",
     "license": "LGPL-3", #"OPL-1",
-    #'images': ['images/demo.gif'],
+    'images': ['images/telegram_and_odoo.gif'],
     'category': 'KTT/KTT',
     'version':'17.0.1.0.2',
     # DEPENDS MODULES

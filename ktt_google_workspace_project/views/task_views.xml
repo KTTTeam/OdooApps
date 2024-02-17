@@ -10,7 +10,7 @@
                     <page name="google_workspace" string="Google Workspace">
                         <group>
                             <group name="info" string="Information">
-                                <field name="google_workspace_webhook"/>
+                                <field name="google_workspace_webhook" widget='url' class="_webhook"/>
                                 <field name="thread_message_id" />
                                 <field name="card_message_id"/>
                             </group>

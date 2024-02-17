@@ -12,7 +12,7 @@
     'maintainer': 'Bùi Đức Tuấn',
     'website': "https://ktt.io.vn",
     "license": "OPL-1",
-    'images': [],
+    'images': ['images/google_and_odoo.gif'],
     'category': 'KTT/Google Workspace',
     'version': '17.0.1.0.1',
 
@@ -42,6 +42,6 @@
     ],
     'application': False,
     'installable': True,
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'USD'
 }
